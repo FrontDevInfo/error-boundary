@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.error_boundry {
+    padding: 100px 50px;
+
+    & .error_emoji {
+        margin-top: 30px;
+        margin-left: 100px;
+        max-width: 200px;
+        height: auto;
+
+        & svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: $mobile) {
+            max-width: 100px;
+            margin-left: 20px;
+        }
+    }
+
+    & div {
+        flex-wrap: wrap;
+    }
+
+    & .btn {
+        margin-top: 20px;
+        margin-right: 20px;
+
+        &:last-child {
+            background-color: #FEE6E2;
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding: 50px 20px;
+    }
+}
